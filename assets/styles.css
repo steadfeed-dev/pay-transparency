@@ -393,3 +393,6 @@ h1,h2,h3,p{margin:0}
   .sample-wrap:focus-visible{outline-offset:6px}
 }
 .sample-table td small{display:block;color:var(--muted);font-size:.85rem}
+
+.tag.verify{background:#fff6e5;border:1px dashed #c98a1b;color:#6e4300}
+.cov .foot-note{margin-top:.8rem;padding:.7rem .9rem;border-radius:12px;background:#fff9ee;border:1px solid #f2d9a4;color:#5c3a00;font-size:.88rem}
