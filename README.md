@@ -1,6 +1,6 @@
 # Pay Transparency Compliance Monitor — public site
 
-Static landing page for [Pay Transparency Compliance Monitor](https://apify.com/steadfeed/pay-transparency-compliance-monitor), a Steadfeed product from OSW LLC (Our Spark Works).
+Static landing page for [Pay Transparency Compliance Monitor](https://apify.com/steadfeed/pay-transparency-compliance-monitor), a Steadfeed product.
 
 - No build step, no cookies, no analytics, no third-party requests. One tiny script (`assets/site.js`) toggles the mobile menu. Font is self-hosted (Inter variable, SIL Open Font License). Icons are inline SVG.
 - The hero “Example report” and the “Sample output (example data)” section use fictional postings from an invented “Example Co.” and are labeled as such. No real company postings are shown. Findings, when present, are potential issues for human review.
