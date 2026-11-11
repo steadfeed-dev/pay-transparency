@@ -1,0 +1,6 @@
+This directory contains subset WOFF2 files of:
+
+- Fraunces, Copyright 2020 The Fraunces Project Authors, licensed under the SIL Open Font License 1.1.
+- Source Sans 3, Copyright 2010-2022 Adobe, licensed under the SIL Open Font License 1.1.
+
+The full OFL text is at https://openfontlicense.org/open-font-license-official-text/

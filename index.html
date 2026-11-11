@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pay Transparency Compliance Monitor — Steadfeed</title>
+  <meta name="description" content="Screen Greenhouse, Lever and Ashby job postings for potential pay-transparency issues under 2026 US, Canadian and EU rules. Re-check weekly. From $0.02. For human review.">
+  <meta name="theme-color" content="#f3eee4">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">Stead<span>feed</span></a>
+      <nav class="nav" aria-label="Primary">
+        <span class="nav-links">
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#coverage">Coverage</a>
+          <a href="#sample">Live sample</a>
+        </span>
+        <a class="btn" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=header-cta">Try on Apify</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Pay Transparency Compliance Monitor</p>
+        <h1>Pay Transparency, Without the Guesswork.</h1>
+        <p class="lede">Weekly screens of the public job postings on Greenhouse, Lever and Ashby boards. When a pay range is missing, unparseable or quietly disappears, you get a potential issue to review — not a verdict.</p>
+        <p class="promise">Pay per posting, not per seat: <strong>$0.02</strong> for an initial or changed check, <strong>$0.005</strong> when a posting is unchanged. Weekly is the default. No subscription.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=hero-cta">Try on Apify</a>
+          <a class="btn btn-ghost" href="#sample">See a live sample</a>
+        </div>
+        <p class="fine">Potential issues for human review. Not legal advice and not a determination of compliance or violation.</p>
+        <div class="stats" aria-label="Pricing at a glance">
+          <div class="stat"><b>$0.02</b><span>Initial or changed posting check</span></div>
+          <div class="stat"><b>$0.005</b><span>Verified unchanged recheck</span></div>
+          <div class="stat"><b>Weekly</b><span>Recommended monitoring cadence</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="wrap">
+        <p class="section-kicker">Who it is for</p>
+        <h2>Built for the people who have to watch the postings.</h2>
+        <p class="section-intro">If you publish or review job ads across states, provinces or countries, this gives you a repeating screen of the public boards you already use — without logging into an ATS.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>HR and talent-acquisition teams</h3>
+            <p>A weekly check that a pay range has not dropped off a live posting, or that a new role went out without one.</p>
+          </article>
+          <article class="card">
+            <h3>Recruiting agencies and HR consultants</h3>
+            <p>One watchlist per client, on the client’s public Greenhouse, Lever or Ashby board. No access to their systems.</p>
+          </article>
+          <article class="card">
+            <h3>People-operations and compliance reviewers</h3>
+            <p>A digest and report that names the laws screened and links each source, so a person can review the live posting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <p class="section-kicker">How it works</p>
+        <h2>Read the public board. Screen the posting. Watch it over time.</h2>
+        <div class="steps">
+          <article>
+            <span class="step-num">01</span>
+            <h3>Point it at a careers board</h3>
+            <p>Paste public Greenhouse, Lever or Ashby board URLs. The monitor reads the same public job feeds the careers site uses, then checks the posting page if the feed shows no range.</p>
+          </article>
+          <article>
+            <span class="step-num">02</span>
+            <h3>Screen for potential issues</h3>
+            <p>Each posting is compared with in-force US, Canadian and EU posting rules that match the location text. Statuses stay cautious: potential issue, review suggested, no issue found, no law identified, or unchecked.</p>
+          </article>
+          <article>
+            <span class="step-num">03</span>
+            <h3>Re-check on a schedule</h3>
+            <p>Run the same watchlist weekly (daily is supported). You are told when a range disappears, a new posting has none, or a flagged item is resolved. Optional webhooks can send the report onward.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <p class="section-kicker">Pricing</p>
+        <h2>Transparent usage pricing. No subscription.</h2>
+        <p class="section-intro">You pay only for postings actually checked, through your own Apify account. Failed lookups, change rows, digests and webhooks are not billed. Apify keeps 20% of usage revenue as the platform fee.</p>
+        <table class="price-table">
+          <thead>
+            <tr><th>Event</th><th>Price</th><th>When it applies</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Event">Initial posting check</td><td class="price" data-label="Price">$0.02</td><td data-label="When it applies">The first time a posting is checked in a watchlist, and any time the posting has changed since its last check.</td></tr>
+            <tr><td data-label="Event">Unchanged recheck</td><td class="price" data-label="Price">$0.005</td><td data-label="When it applies">A posting whose content and assessment are identical to its last paid check. The text is still re-read every run.</td></tr>
+            <tr><td data-label="Event">Actor start</td><td class="price" data-label="Price">$0.00005</td><td data-label="When it applies">Standard Apify start event (256 MB default).</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Example, before Apify platform usage (usually a fraction of a cent): a 100-posting board is $2.00 on the first check; a weekly recheck with nothing changed is $0.50. If five postings change, $0.50 + 5 × $0.015 more. Set a maximum cost per run and the actor stops cleanly at it.</p>
+      </div>
+    </section>
+
+    <section id="coverage">
+      <div class="wrap coverage">
+        <div>
+          <p class="section-kicker">Coverage</p>
+          <h2>2026 posting rules, kept as a screen — not a certificate.</h2>
+          <p class="section-intro">Laws are matched from the posting’s location text. Remote US roles can be screened against the states you hire in, or every in-force state law. Employer-size thresholds are skipped when you provide a headcount. Upcoming laws stay silent until their effective date.</p>
+          <div class="chip-wrap" aria-label="Jurisdictions currently screened">
+            <span class="chip"><strong>US states:</strong> CA, CO, CT, DC, HI, IL, ME, MD, MA, MN, NJ, NY, VT, VA, WA</span>
+            <span class="chip"><strong>US local:</strong> New York City, Westchester County, Cleveland, Jersey City (5+ employees)</span>
+            <span class="chip"><strong>Upcoming:</strong> Columbus, Ohio (posting duty enforceable 1 Jan 2027); Delaware (26 Sep 2027)</span>
+            <span class="chip"><strong>Canada:</strong> British Columbia, Ontario, Prince Edward Island, New Brunswick</span>
+            <span class="chip"><strong>EU:</strong> Pay Transparency Directive note, applied through each member state’s law</span>
+          </div>
+        </div>
+        <aside class="panel">
+          <h3>Honest limits</h3>
+          <p>This is a screening aid for public posting text. It cannot see ranges shown only as images, PDFs, behind a login, or on pages that need JavaScript. It does not read Indeed, LinkedIn or other copies of a posting. Workday, iCIMS and custom career pages are not supported yet. This is not an official ATS partnership or legal advice.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sample">
+      <div class="wrap">
+        <p class="section-kicker">Live sample</p>
+        <h2>Output from an actual run. Nothing invented.</h2>
+        <div class="sample-meta">
+          <span>10 November 2026, 8:31 PM PT</span>
+          <span>Build 0.1.9 · Run jh1xTIXx2SaHObimw</span>
+          <span>5 public Greenhouse postings screened</span>
+        </div>
+        <div class="sample-wrap">
+          <table class="sample-table">
+            <thead>
+              <tr>
+                <th>Posting</th>
+                <th>Location</th>
+                <th>Pay observed</th>
+                <th>Status</th>
+                <th>Laws screened</th>
+              </tr>
+            </thead>
+            <tbody>
+      <tr>
+        <td data-label="Posting"><strong>Discord</strong><div><a href="https://job-boards.greenhouse.io/discord/jobs/8917177002">Associate Commercial Counsel</a></div></td>
+        <td data-label="Location">San Francisco Bay Area or Remote (U.S.); San Francisco, California, United States</td>
+        <td class="price" data-label="Pay observed">Base Salary $200,000–$225,000</td>
+        <td data-label="Status"><span class="status status-ok">No issue found</span></td>
+        <td class="laws" data-label="Laws screened">US-CA, US-NY, US-WA, US-CO, US-CT, US-ME, US-NJ</td>
+      </tr>
+      <tr>
+        <td data-label="Posting"><strong>Discord</strong><div><a href="https://job-boards.greenhouse.io/discord/jobs/8722538002">Engineering Manager, Machine Learning (Safety)</a></div></td>
+        <td data-label="Location">Remote (US)</td>
+        <td class="price" data-label="Pay observed">Base Salary $272,000–$340,000</td>
+        <td data-label="Status"><span class="status status-ok">No issue found</span></td>
+        <td class="laws" data-label="Laws screened">US-CA, US-NY, US-WA, US-CO, US-CT, US-ME, US-NJ</td>
+      </tr>
+      <tr>
+        <td data-label="Posting"><strong>Discord</strong><div><a href="https://job-boards.greenhouse.io/discord/jobs/8649856002">Engineering Manager, Platform Security</a></div></td>
+        <td data-label="Location">Remote (West Coast); Remote (US)</td>
+        <td class="price" data-label="Pay observed">Base Salary $248,000–$310,000</td>
+        <td data-label="Status"><span class="status status-ok">No issue found</span></td>
+        <td class="laws" data-label="Laws screened">US-CA, US-NY, US-WA, US-CO, US-CT, US-ME, US-NJ</td>
+      </tr>
+      <tr>
+        <td data-label="Posting"><strong>Discord</strong><div><a href="https://job-boards.greenhouse.io/discord/jobs/8847080002">Group Product Manager, Data/ML</a></div></td>
+        <td data-label="Location">San Francisco Bay Area; San Francisco, California, United States</td>
+        <td class="price" data-label="Pay observed">Base Salary $304,000–$380,000</td>
+        <td data-label="Status"><span class="status status-ok">No issue found</span></td>
+        <td class="laws" data-label="Laws screened">US-CA</td>
+      </tr>
+      <tr>
+        <td data-label="Posting"><strong>Discord</strong><div><a href="https://job-boards.greenhouse.io/discord/jobs/8771059002">Program Manager, Fraud and Payments Risk</a></div></td>
+        <td data-label="Location">San Francisco Bay Area; San Francisco, California, United States</td>
+        <td class="price" data-label="Pay observed">Base Salary $144,000–$162,000</td>
+        <td data-label="Status"><span class="status status-ok">No issue found</span></td>
+        <td class="laws" data-label="Laws screened">US-CA</td>
+      </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="caption">Sample output from a live run of Pay Transparency Compliance Monitor (build 0.1.9, run jh1xTIXx2SaHObimw) on 10 November 2026 at 8:31 PM PT (America/Los_Angeles). Five public postings on a Greenhouse board were screened. 'No issue found' is not a statement of compliance. Findings, when present, are potential issues for human review, not a determination of violation, and this is not legal advice.</p>
+      </div>
+    </section>
+
+    <section id="limits">
+      <div class="wrap">
+        <p class="section-kicker">How to read results</p>
+        <h2>Every flag is a prompt to look, not a finding of violation.</h2>
+        <div class="limits">
+          <article class="card"><h3>Potential issue</h3><p>A high-priority item was found in the data we can read, for example no pay range. Open the live posting and confirm before acting.</p></article>
+          <article class="card"><h3>Review suggested</h3><p>Wording is unclear, or a lower-priority item such as benefits or a close date may be missing where a law asks for it.</p></article>
+          <article class="card"><h3>No issue found</h3><p>Nothing was flagged by this screen. This is not a statement that the posting complies.</p></article>
+          <article class="card"><h3>No law identified / Unchecked</h3><p>No matching law could be read from the location text, or the lookup failed. Unchecked items are never billed and never counted as issues.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Start a first check in your own Apify account.</h2>
+          <p>The example input screens five postings and costs about $0.10. Schedule the same watchlist weekly when you are ready.</p>
+          <a class="btn" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=footer-band-cta">Try on Apify</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="wordmark">Stead<span>feed</span></div>
+        <p>Pay Transparency Compliance Monitor is a product of OSW LLC (Our Spark Works), offered on the Apify Store. This site uses no cookies, no analytics and no third-party trackers.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=footer-link">Apify Store</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#sample">Live sample</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
