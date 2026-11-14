@@ -1,10 +1,17 @@
-# Pay Transparency Compliance Monitor — public site
+# Steadfeed — public site (getsteadfeed.com)
 
-Static landing page for [Pay Transparency Compliance Monitor](https://apify.com/steadfeed/pay-transparency-compliance-monitor), a Steadfeed product.
+Static website for Steadfeed, a small software studio making practical web and data tools sold pay-per-use on the [Apify Store](https://apify.com/steadfeed).
 
-- No build step and no cookies. Cloudflare Web Analytics (cookie-free, aggregate visit counts) is the only third-party script. One tiny script (`assets/site.js`) toggles the mobile menu. Font is self-hosted (Inter variable, SIL Open Font License). Icons are inline SVG.
-- The hero “Example report” and the “Sample output (example data)” section use fictional postings from an invented “Example Co.” and are labeled as such. No real company postings are shown. Findings, when present, are potential issues for human review.
-- GitHub Pages is served from the `main` branch, site root. Live URL: `https://getsteadfeed.com/`. The previous project URL, `https://steadfeed-dev.github.io/pay-transparency/`, redirects to the custom domain.
-- Custom domain: the `CNAME` file contains `getsteadfeed.com`. HTTPS is enforced once GitHub has issued the certificate.
+## Pages
+- `/` (`index.html`): Steadfeed home. Short intro, an "Are you in HR? This way" callout to the Pay Transparency page, and a product grid for every public Steadfeed tool, grouped as HR & hiring, Website audits & AI visibility, Monitoring & capture, and AI assistant tools (Site Audit MCP Server).
+- `/pay-transparency/`: the Pay Transparency Compliance Monitor landing page (moved intact from `/`).
+- `/privacy.html`, `404.html`, `robots.txt`, `sitemap.xml`.
 
-CTA links to the Apify Store include UTM parameters (`utm_source=steadfeed-site`) so conversions can be read from Store traffic, not from trackers on this site.
+Old single-page links such as `getsteadfeed.com/#pricing` or `/#faq` are forwarded to the same section on `/pay-transparency/` by a small inline script in the home page `<head>` (query strings are kept).
+
+## Notes
+- No build step and no cookies. Cloudflare Web Analytics (cookie-free, aggregate visit counts) is the only third-party script. `assets/site.js` toggles the mobile menu. Font is self-hosted (Inter variable, SIL Open Font License). Icons are inline SVG.
+- PTCM example reports use fictional postings from an invented "Example Co." and are labeled as such. Findings are potential issues for human review, not legal advice.
+- Product names, descriptions and prices on the home page come from the public Apify Store listings. Update them when a Store listing changes.
+- GitHub Pages is served from the `main` branch, site root. Custom domain: `CNAME` contains `getsteadfeed.com`.
+- Links to the Apify Store include UTM parameters (`utm_source=steadfeed-site`; campaign `steadfeed-home` on the home page, `ptcm-landing` on the PTCM page) so conversions can be read from Store traffic, not from trackers on this site.

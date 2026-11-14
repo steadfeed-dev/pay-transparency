@@ -3,31 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pay Transparency Compliance Monitor — Steadfeed</title>
-  <meta name="description" content="Screen Greenhouse, Lever and Ashby job postings for potential pay-transparency issues under 2026 US, Canadian and EU rules. Re-check weekly. From $0.02. For human review.">
+  <title>Steadfeed — Small, practical web and data tools</title>
+  <meta name="description" content="Steadfeed makes small, practical web and data tools: pay-transparency screening for HR, website and AI-visibility audits, page monitoring and an MCP server. Pay per use on Apify, no subscriptions.">
   <meta name="theme-color" content="#0b1020">
   <link rel="canonical" href="https://getsteadfeed.com/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta property="og:url" content="https://getsteadfeed.com/">
-  <meta property="og:title" content="Pay Transparency Compliance Monitor — Steadfeed">
-  <meta property="og:description" content="Screen Greenhouse, Lever and Ashby job postings for potential pay-transparency issues under 2026 US, Canadian and EU rules. Re-check weekly. From $0.02. For human review.">
+  <meta property="og:title" content="Steadfeed — Small, practical web and data tools">
+  <meta property="og:description" content="Steadfeed makes small, practical web and data tools: pay-transparency screening for HR, website and AI-visibility audits, page monitoring and an MCP server. Pay per use on Apify, no subscriptions.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://getsteadfeed.com/assets/og-card.png">
-  <meta property="og:image:alt" content="Steadfeed Pay Transparency Compliance Monitor: Pay Transparency, Without the Guesswork.">
+  <meta property="og:image" content="https://getsteadfeed.com/assets/og-steadfeed.png">
+  <meta property="og:image:alt" content="Steadfeed: small, practical web and data tools. Pay per use, no subscriptions.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
-  <script>document.documentElement.className="js"</script>
+  <script>
+/* Old single-page links (getsteadfeed.com/#pricing etc.) now live on /pay-transparency/. */
+(function(){var h=location.hash.slice(1),old=["who","how","features","coverage","limits","pricing","sample","faq"];
+if(old.indexOf(h)>-1){location.replace("pay-transparency/"+location.search+"#"+h);}})();
+document.documentElement.className="js";
+</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="index.html" aria-label="Steadfeed home"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 21.5h14M9 16h14M9 10.5h8" stroke="#0b1020" stroke-width="2.6" stroke-linecap="round"/></svg>Steadfeed</a>
+      <a class="wordmark" href="./" aria-label="Steadfeed home"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 21.5h14M9 16h14M9 10.5h8" stroke="#0b1020" stroke-width="2.6" stroke-linecap="round"/></svg>Steadfeed</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="icon i-open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true" focusable="false"><use href="#i-x"/></svg></button>
       <nav class="nav" id="site-nav" aria-label="Primary">
-        <span class="nav-links"><a href="#how">How it works</a><a href="#coverage">Coverage</a><a href="#pricing">Pricing</a><a href="#sample">Sample output</a><a href="#faq">FAQ</a></span>
-        <a class="btn btn-sm" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=header-cta">Try on Apify <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+        <span class="nav-links"><a href="#products">Products</a><a href="pay-transparency/">For HR</a><a href="#about">About</a><a href="#contact">Contact</a></span>
+        <a class="btn btn-sm" href="https://apify.com/steadfeed?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=header-cta">All tools on Apify <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
       </nav>
     </div>
   </header>
@@ -57,213 +62,178 @@
 <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
 <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></symbol>
 <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4.5 17a8.5 8.5 0 1115 0"/><path d="M12 13l4-4"/><circle cx="12" cy="13" r="1.3"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7L3.5 12l5 5M15.5 7l5 5-5 5"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.6-2.5h6.8L17 8h3a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V9a1 1 0 011-1z"/><circle cx="12" cy="13.2" r="3.4"/></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9.5 16.2h5"/></symbol>
+<symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5M12 10v4.5l-3 6M12 14.5l3 6"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.4-4.4"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3a5.5 5.5 0 01-11 0zM12 16.5V21"/></symbol>
 </defs></svg>
   <main id="main">
-    <section class="hero">
+    <section class="hero hero-home">
       <div class="wrap">
         <div class="hero-copy">
-          <p class="pill"><span class="dot" aria-hidden="true"></span>Pay Transparency Compliance Monitor</p>
-          <h1>Pay Transparency, <span class="grad">Without the Guesswork.</span></h1>
-          <p class="lede">Monitor job postings, identify potential pay-transparency issues, and keep your team informed as requirements evolve.</p>
-          <p class="promise">Less manual checking. <span>More confident decisions.</span></p>
+          <a class="hr-callout" href="pay-transparency/"><span class="hr-tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg>Are you in HR?</span><span class="hr-text">Pay-transparency screening for your job postings</span><span class="hr-go">This way <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></a>
+          <h1>Small, practical tools <span class="grad">for the web and your data.</span></h1>
+          <p class="lede">Steadfeed builds focused tools that do one job well: screening job postings, auditing websites for people, search and AI assistants, and watching pages for changes.</p>
           <div class="hero-actions">
-            <a class="btn btn-lg" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=hero-cta">Try on Apify <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn-lg btn-ghost" href="#sample">See sample output</a>
+            <a class="btn btn-lg" href="#products">See all products <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-lg btn-ghost" href="pay-transparency/">HR teams, start here</a>
           </div>
           <ul class="hero-points">
-            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Pay per use, no subscription</li>
-            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Reads public job feeds</li>
-            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>No ATS login needed</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Pay per use on Apify</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>No subscriptions</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Runs in your own Apify account</li>
           </ul>
-          <p class="hero-fine">Potential issues for human review. Not legal advice.</p>
         </div>
-        <div class="mock-stage">
-          <div class="mock" role="img" aria-label="Example report, synthetic data: a table of six sample job postings with statuses such as Potential issue, Review suggested and No issue found.">
-            <div aria-hidden="true">
-            <div class="mock-bar"><span class="mock-dots"><i></i><i></i><i></i></span><span class="mock-title">Weekly report · Example Co. careers board</span><span class="tag-example">Example report · synthetic data</span></div>
-            <div class="mock-body">
-              <div class="mock-kpis">
-                <div class="kpi"><b>24</b><span>Postings screened</span></div>
-                <div class="kpi k-issue"><b>3</b><span>Potential issues</span></div>
-                <div class="kpi k-review"><b>5</b><span>Review suggested</span></div>
-                <div class="kpi k-ok"><b>16</b><span>No issue found</span></div>
-              </div>
-              <div class="mock-table">
-                <div class="mrow mhead"><span>Posting</span><span>Location</span><span>Pay shown</span><span>Status</span></div>
-                <div class="mrow" role="row"><div class="role" role="cell">Senior Accountant<small>Finance</small></div><div class="loc" role="cell">Newark, NJ</div><div class="pay none" role="cell">No range shown</div><div class="st" role="cell"><span class="status status-issue">Potential issue</span></div></div>
-                <div class="mrow" role="row"><div class="role" role="cell">Talent Partner<small>People</small></div><div class="loc" role="cell">Jersey City, NJ</div><div class="pay" role="cell">“Competitive”</div><div class="st" role="cell"><span class="status status-review">Review suggested</span></div></div>
-                <div class="mrow" role="row"><div class="role" role="cell">Data Analyst<small>Analytics</small></div><div class="loc" role="cell">Remote (US)</div><div class="pay" role="cell">$92,000–$118,000</div><div class="st" role="cell"><span class="status status-ok">No issue found</span></div></div>
-                <div class="mrow" role="row"><div class="role" role="cell">Customer Success Manager<small>Support</small></div><div class="loc" role="cell">Toronto, ON</div><div class="pay none" role="cell">No range shown</div><div class="st" role="cell"><span class="status status-issue">Potential issue</span></div></div>
-                <div class="mrow" role="row"><div class="role" role="cell">Product Designer<small>Design</small></div><div class="loc" role="cell">Cleveland, OH</div><div class="pay" role="cell">$95,000–$115,000</div><div class="st" role="cell"><span class="status status-ok">No issue found</span></div></div>
-                <div class="mrow" role="row"><div class="role" role="cell">Operations Lead<small>Operations</small></div><div class="loc" role="cell">Boston, MA</div><div class="pay" role="cell">$110,000–$130,000</div><div class="st" role="cell"><span class="status status-ok">No issue found</span></div></div>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="alert-float" aria-hidden="true">
-            <span class="ai"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg></span>
-            <div><b>Change alert · example</b><p>A pay range is no longer visible on “Senior Accountant, Newark, NJ”. Potential issue for human review.</p></div>
-          </div>
+        <nav class="cat-strip" aria-label="Product categories">
+          <a href="#hr"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span><span><b>HR &amp; hiring</b><small>3 tools</small></span></a>
+          <a href="#web"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span><span><b>Website &amp; AI visibility</b><small>6 tools</small></span></a>
+          <a href="#monitoring"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span><span><b>Monitoring &amp; capture</b><small>2 tools</small></span></a>
+          <a href="#ai-tools"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plug"/></svg></span><span><b>AI assistant tools</b><small>1 MCP server</small></span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="wrap">
+        <div class="head-center"><p class="kicker">Products</p>
+          <h2>Twelve tools. One simple way to pay.</h2>
+          <p class="intro">Every tool runs on the Apify platform in your own account. You pay per result at the price shown on each card, plus normal Apify platform usage. Each Store page lists exactly what is and isn’t charged.</p></div>
+<div class="pgroup" id="hr">
+<div class="pgroup-head"><h3>HR &amp; hiring</h3><p>Public job postings, read on a schedule. No ATS login needed.</p></div>
+<div class="pgrid"><article class="pcard featured">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span><span class="pc-badge">For HR teams</span></div>
+<h4>Pay Transparency Compliance Monitor</h4>
+<p>Screens Greenhouse, Lever and Ashby postings against 2026 US, Canadian and EU pay-transparency rules, re-checks weekly and alerts you when a pay range disappears. Potential issues for human review, not legal advice.</p>
+<div class="pc-price"><b>$0.02 per posting checked</b><span class="pc-note">$0.005 per unchanged re-check</span></div>
+<div class="pc-actions"><a class="btn btn-sm" href="pay-transparency/">Learn more <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><a class="pc-link" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-pay-transparency-compliance-monitor">View on Apify Store<span class="sr-only"> (Pay Transparency Compliance Monitor)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-dollar"/></svg></span></div>
+<h4>Job Pay-Transparency Extractor</h4>
+<p>Pulls pay ranges from public Greenhouse, Lever and Ashby job feeds, with evidence and per-company summaries. Flags postings with no range found. Informational, not legal advice.</p>
+<div class="pc-price"><b>$0.002 per job checked</b></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/pay-transparency-extractor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-pay-transparency-extractor">View on Apify Store<span class="sr-only"> (Job Pay-Transparency Extractor)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg></span></div>
+<h4>ATS Job Board Monitor</h4>
+<p>Watches company job boards on Greenhouse, Lever, Ashby, Workable and SmartRecruiters and returns only new, changed and closed jobs since your last run, in one format.</p>
+<div class="pc-price"><b>$0.001 per job row</b><span class="pc-note">$0.0005 per board checked, first check of each board free</span></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/ats-job-board-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-ats-job-board-monitor">View on Apify Store<span class="sr-only"> (ATS Job Board Monitor)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article></div>
+</div>
+<div class="pgroup" id="web">
+<div class="pgroup-head"><h3>Website audits &amp; AI visibility</h3><p>Check how a site looks to people, search engines and AI assistants.</p></div>
+<div class="pgrid"><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg></span></div>
+<h4>AI Search Visibility Tracker</h4>
+<p>Asks ChatGPT, Perplexity, Claude and Gemini the questions your buyers ask, then shows brand mentions, rank in the answer, competitor share of voice and cited domains.</p>
+<div class="pc-price"><b>$0.01 per answer analyzed</b><span class="pc-note">Bring your own AI provider API keys</span></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/ai-search-visibility-tracker?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-ai-search-visibility-tracker">View on Apify Store<span class="sr-only"> (AI Search Visibility Tracker)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bot"/></svg></span></div>
+<h4>AI Crawler Access Auditor</h4>
+<p>Shows whether your robots.txt, noindex or X-Robots-Tag rules block ChatGPT, Perplexity, Claude, Google AI or Apple crawlers, with copy-paste fixes.</p>
+<div class="pc-price"><b>$0.005 per website audited</b><span class="pc-note">No API key needed</span></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/ai-crawler-access-auditor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-ai-crawler-access-auditor">View on Apify Store<span class="sr-only"> (AI Crawler Access Auditor)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span></div>
+<h4>Schema &amp; AI-Readiness Validator</h4>
+<p>Checks JSON-LD, Open Graph, canonical tags, llms.txt and AI robots.txt cues, with a plain-English readiness score. Informational, not a ranking guarantee.</p>
+<div class="pc-price"><b>$0.003 per page checked</b></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/schema-ai-readiness-validator?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-schema-ai-readiness-validator">View on Apify Store<span class="sr-only"> (Schema and AI-Readiness Validator)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-access"/></svg></span></div>
+<h4>Accessibility WCAG / EAA Checker</h4>
+<p>Bulk axe-core checks against WCAG 2.x A/AA rules to support EAA readiness reviews. Not a legal compliance certificate.</p>
+<div class="pc-price"><b>$0.005 per page checked</b></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/accessibility-wcag-checker?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-accessibility-wcag-checker">View on Apify Store<span class="sr-only"> (Accessibility WCAG / EAA Checker)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-gauge"/></svg></span></div>
+<h4>Bulk PageSpeed / Lighthouse Audit</h4>
+<p>Runs Google PageSpeed Insights on many URLs at once: Core Web Vitals, Lighthouse scores and sitemap discovery.</p>
+<div class="pc-price"><b>$0.004 per URL audited</b><span class="pc-note">Bring your own free Google API key</span></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/bulk-pagespeed-audit?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-bulk-pagespeed-audit">View on Apify Store<span class="sr-only"> (Bulk PageSpeed / Lighthouse Audit)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg></span></div>
+<h4>Website Tech-Stack Detector</h4>
+<p>Detects CMS, JavaScript frameworks, analytics, marketing tags and CDNs from public HTML and response headers.</p>
+<div class="pc-price"><b>$0.002 per domain checked</b></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/website-tech-stack-detector?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-website-tech-stack-detector">View on Apify Store<span class="sr-only"> (Website Tech-Stack Detector)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article></div>
+</div>
+<div class="pgroup" id="monitoring">
+<div class="pgroup-head"><h3>Monitoring &amp; capture</h3><p>Keep a record of public pages, and know when they change.</p></div>
+<div class="pgrid"><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span></div>
+<h4>Page Change Monitor</h4>
+<p>Snapshots public pricing, terms or policy pages, compares them on a schedule and returns short text diffs. Respects robots.txt and never logs in.</p>
+<div class="pc-price"><b>$0.002 per page checked</b></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/page-change-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-page-change-monitor">View on Apify Store<span class="sr-only"> (Page Change Monitor)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article><article class="pcard">
+<div class="pc-top"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-camera"/></svg></span></div>
+<h4>Screenshot &amp; PDF API</h4>
+<p>Batch screenshots and PDFs of public pages, full-page or a single element, with optional cookie-banner hiding.</p>
+<div class="pc-price"><b>$0.002 per screenshot</b><span class="pc-note">$0.004 per PDF</span></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/screenshot-pdf-api?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-screenshot-pdf-api">View on Apify Store<span class="sr-only"> (Screenshot and PDF API)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</article></div>
+</div>
+<div class="pgroup" id="ai-tools">
+<div class="pgroup-head"><h3>AI assistant tools</h3><p>Give an AI agent the same audits, through the Model Context Protocol.</p></div>
+<article class="pcard mcp">
+<div class="mcp-main">
+<div class="pc-top"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plug"/></svg></span><span class="pc-badge">MCP server</span></div>
+<h4>Site Audit MCP Server</h4>
+<p>One MCP server that lets AI agents run Steadfeed audits: schema and AI-readiness, accessibility, tech stack, PageSpeed, AI-crawler access, page changes and pay-transparency posting checks. Runs through your own Apify account.</p>
+<div class="pc-price"><b>$0.001 per tool call</b><span class="pc-note">Each underlying Steadfeed tool run is billed at its own price</span></div>
+<div class="pc-actions"><a class="pc-link" href="https://apify.com/steadfeed/steadfeed-site-audit-mcp?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=card-steadfeed-site-audit-mcp">View on Apify Store<span class="sr-only"> (Site Audit MCP Server)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+</div>
+<div class="mcp-side">
+<p class="mcp-label">Also listed on</p>
+<ul class="mcp-list">
+<li><a href="https://github.com/steadfeed-dev/steadfeed-site-audit-mcp">GitHub <span>source and setup</span></a></li>
+<li><a href="https://glama.ai/mcp/servers/steadfeed-dev/steadfeed-site-audit-mcp">Glama <span>MCP directory</span></a></li>
+<li><a href="https://mcp.so/servers/site-audit-mcp-server">mcp.so <span>MCP directory</span></a></li>
+<li><span class="mcp-plain">Official MCP Registry <span>io.github.steadfeed-dev/steadfeed-site-audit-mcp</span></span></li>
+</ul>
+</div>
+</article>
+</div>
+
+      </div>
+    </section>
+
+    <section class="section soft" id="how-we-work">
+      <div class="wrap">
+        <div class="head-center"><p class="kicker">How we build</p>
+          <h2>Plain tools, honest output.</h2></div>
+        <div class="grid-3">
+          <article class="card"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-dollar"/></svg></span><h3>Pay per result</h3><p>No plans, seats or subscriptions. Each tool lists its price per result on its Apify Store page, and you can set a maximum cost per run.</p></article>
+          <article class="card"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></span><h3>Your account, your data</h3><p>Runs happen in your own Apify account. Our tools work from public pages, public feeds and any API keys you choose to add. They do not log in to your systems or get around paywalls.</p></article>
+          <article class="card"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span><h3>Careful wording</h3><p>Findings are labeled as signals to review, not verdicts. Nothing here is legal advice or a compliance certificate.</p></article>
         </div>
       </div>
     </section>
 
-    <div class="strip">
-      <div class="wrap">
-        <div class="strip-inner">
-          <div class="strip-item"><b>14 states + DC</b><span>US state laws screened</span></div>
-          <div class="strip-item"><b>4 provinces</b><span>Canadian laws screened</span></div>
-          <div class="strip-item"><b>$0.02</b><span>per initial or changed posting</span></div>
-          <div class="strip-item"><b>Weekly</b><span>default re-check, daily available</span></div>
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="kicker">About</p>
+          <h2>A small software studio in Cottage Grove, Oregon.</h2>
+          <p class="intro">Steadfeed makes small, dependable tools for the repetitive checks that eat up a week: are our job posts showing pay, can AI assistants see our site, did that policy page change? Each tool is built to do that one job, explain what it found in plain English and charge by the result, not by the month.</p>
         </div>
-        <p class="strip-note">Reads the public Greenhouse, Lever and Ashby job feeds. Not affiliated with or endorsed by any of them.</p>
+        <aside class="note-panel" id="contact"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span><h3>Contact</h3><p>Questions about a tool, pricing or a feature you need? Write to <a href="mailto:hello@getsteadfeed.com" style="color:#fff">hello@getsteadfeed.com</a>. For a specific tool, you can also use the Issues tab on its Apify Store page.</p></aside>
       </div>
-    </div>
-<section class="section " id="who">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">Who it is for</p>
-<h2>Built for the people who watch the postings.</h2>
-<p class="intro">If you publish or review job ads across states, provinces or countries, you get a repeating screen of the public boards you already use, without logging into an ATS.</p></div>
-<div class="grid-3">
-<article class="card"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span><h3>HR and talent-acquisition teams</h3><p>A weekly check that a pay range has not dropped off a live posting, or that a new role went out without one.</p></article>
-<article class="card"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg></span><h3>Recruiting agencies</h3><p>One watchlist per client, built from each client’s public job board. No access to their systems.</p></article>
-<article class="card"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><h3>HR consultants</h3><p>Keep an eye on several clients at once, with a digest and report that names the laws screened and links every source posting.</p></article>
-</div>
-</div>
-</section>
-<section class="section soft" id="how">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">How it works</p>
-<h2>Three steps. Then it keeps watching.</h2>
-<p class="intro">Set it up once in your own Apify account. Re-checks run on the schedule you choose.</p></div>
-<div class="steps">
-<article class="step"><span class="step-num">1</span><h3>Paste a careers board</h3><p>Add public Greenhouse, Lever or Ashby board URLs. The monitor reads the same public job feeds the careers site uses, then checks the posting page if the feed shows no range.</p><div class="chips"><span class="chip-s">Greenhouse</span><span class="chip-s">Lever</span><span class="chip-s">Ashby</span></div></article>
-<article class="step"><span class="step-num">2</span><h3>Screen each posting</h3><p>Each posting is compared with in-force US, Canadian and EU posting rules that match its location text. Statuses stay cautious and every flag is a potential issue for human review.</p><div class="chips"><span class="chip-s">Potential issue</span><span class="chip-s">Review suggested</span><span class="chip-s">No issue found</span></div></article>
-<article class="step"><span class="step-num">3</span><h3>Get weekly alerts</h3><p>Run the same watchlist weekly (daily is supported). You are told when a range disappears, a new posting has none, or a flagged item is resolved. Optional webhooks send the report onward.</p><div class="chips"><span class="chip-s">Weekly digest</span><span class="chip-s">Report</span><span class="chip-s">Webhook</span></div></article>
-</div>
-</div>
-</section>
-<section class="section " id="features">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">What you get</p>
-<h2>Less manual checking, built in.</h2>
-<p class="intro">The repetitive part of pay-range review, done on a schedule, with the source link beside every result.</p></div>
-<div class="bento">
-<article class="card dark b-wide"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span><h3>Know when a pay range disappears</h3><p>Every run re-reads the posting. If a range that was there is gone, or a new role goes up without one, it shows up in your digest.</p>
-<div class="mini-diff" role="img" aria-label="Example change, synthetic data: a pay range changes to no range shown."><div aria-hidden="true"><span>Senior Accountant · Newark, NJ <em style="opacity:.6">(example)</em></span><span class="del">− $84,000–$98,000</span></div><div aria-hidden="true"><span>Same posting, next weekly run</span><span class="add">+ no range shown</span></div></div></article>
-<article class="card b-narrow"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span><h3>Laws matched by location</h3><p>Laws are matched from each posting’s location text. Remote US roles can be screened against the states you hire in, or every in-force state law.</p><div class="tags"><span class="tag ">Newark, NJ → NJ</span><span class="tag ">Toronto, ON → Ontario</span><span class="tag ">Remote (US) → your states</span></div></article>
-<article class="card b-half"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span><h3>Results you can read at a glance</h3><p>Cautious statuses, never a verdict.</p>
-<div class="legend">
-<div><span class="status status-issue">Potential issue</span><span>A high-priority item was found in the text we can read, such as no pay range.</span></div>
-<div><span class="status status-review">Review suggested</span><span>Wording is unclear, or a lower-priority item may be missing.</span></div>
-<div><span class="status status-ok">No issue found</span><span>Nothing was flagged. Not a statement that the posting complies.</span></div>
-</div></article>
-<article class="card b-half"><span class="ico soft"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg></span><h3>Digest, report and webhooks</h3><p>A weekly digest and a report that names the laws screened and links each source posting, so a person can review the live page. Optional webhooks pass the report to your own tools. Set a maximum cost per run and the actor stops cleanly at it.</p><div class="digest" role="img" aria-label="Example weekly digest, synthetic data"><span class="eg" aria-hidden="true">Example weekly digest · synthetic</span><div aria-hidden="true"><span>Range no longer visible</span><small>1 new</small></div><div aria-hidden="true"><span>New posting without a range</span><small>1 new</small></div><div aria-hidden="true"><span>Flagged item resolved</span><small>1 resolved</small></div></div></article>
-</div>
-</div>
-</section>
-<section class="section soft" id="coverage">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">Coverage and jurisdictions</p>
-<h2>2026 posting rules, kept as a screen, not a verdict.</h2>
-<p class="intro">Upcoming laws stay silent until their effective date. You can supply a headcount, and laws above your employer size are skipped.</p></div>
-<div class="cov-grid">
-<article class="cov big"><h3><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>United States, states</h3><div class="tags"><span class="tag ">CA</span><span class="tag ">CO</span><span class="tag ">CT</span><span class="tag ">DC</span><span class="tag ">HI</span><span class="tag ">IL</span><span class="tag ">ME</span><span class="tag ">MD</span><span class="tag ">MA</span><span class="tag ">MN</span><span class="tag ">NJ</span><span class="tag ">NY</span><span class="tag ">VT</span><span class="tag verify">VA · details being verified †</span><span class="tag">WA</span></div><p>California, Colorado, Connecticut, District of Columbia, Hawaii, Illinois, Maine, Maryland, Massachusetts, Minnesota, New Jersey, New York, Vermont, Virginia† and Washington.</p><p class="foot-note"><strong>† Virginia:</strong> the effective date and employer-size threshold are still being verified against a primary source. The product flags this in its output, so treat Virginia results with extra care and check the statute.</p></article>
-<article class="cov big"><h3><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-building"/></svg></span>United States, local and upcoming</h3><p class="sub" style="margin-top:1.1rem">In force</p><div class="tags"><span class="tag ">New York City</span><span class="tag ">Westchester County</span><span class="tag ">Cleveland</span><span class="tag ">Jersey City (5+ employees)</span></div><p class="sub">Upcoming</p><div class="tags"><span class="tag up">Columbus, Ohio · enforceable 1 Jan 2027</span><span class="tag up">Delaware · 26 Sep 2027</span></div></article>
-<article class="cov big"><h3><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span>Canada</h3><div class="tags"><span class="tag ">British Columbia</span><span class="tag ">Ontario</span><span class="tag ">Prince Edward Island</span><span class="tag ">New Brunswick</span></div></article>
-<article class="cov big"><h3><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg></span>European Union</h3><p>The Pay Transparency Directive is included as a note, applied through each member state’s own law.</p></article>
-</div>
-</div>
-</section>
-<section class="section " id="limits">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">Limitations</p>
-<h2>An honest screen, with honest limits.</h2>
-<p class="intro">This is a screening aid for public posting text. Every flag is a prompt to look, so a person should review the live posting before acting.</p></div>
-<div class="limits">
-<ul class="limit-list">
-<li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"/></svg><span>It cannot see pay ranges shown only as <strong>images or PDFs</strong>.</span></li>
-<li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg><span>It cannot see anything <strong>behind a login</strong>, or on pages that <strong>need JavaScript</strong> to show the range.</span></li>
-<li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-link"/></svg><span>It does not read <strong>Indeed, LinkedIn</strong> or other copies of a posting. Workday, iCIMS and custom career pages are not supported yet.</span></li>
-<li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span>Facts such as employer size, where the worker will be based and exemptions can decide whether a law applies. A screen can’t see them.</span></li>
-</ul>
-<aside class="note-panel"><span class="ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span><h3>Not legal advice</h3><p>Findings are potential issues for human review. “No issue found” means this screen flagged nothing, not that a posting meets any law. Laws and thresholds change, so where it matters, check with counsel. There is no ATS partnership here: Steadfeed reads public job feeds only.</p></aside>
-</div>
-</div>
-</section>
-<section class="section soft" id="pricing">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">Pricing</p>
-<h2>Transparent usage pricing. No subscription.</h2>
-<p class="intro">You pay only for postings actually checked, through your own Apify account. Weekly is the default, and daily is available.</p></div>
-<div class="price-grid">
-<article class="price featured"><span class="badge">Core price</span><h3>Initial or changed check</h3><div class="amount"><b>$0.02</b><span>per posting</span></div><p>The first time a posting is checked in a watchlist, and any time it has changed since its last check.</p><ul><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Law screen and status</li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Source link in the report</li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Change alerts</li></ul><a class="btn" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=pricing-cta">Try on Apify <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></article>
-<article class="price"><h3>Verified unchanged recheck</h3><div class="amount"><b>$0.005</b><span>per posting</span></div><p>A posting whose content and assessment are identical to its last paid check. The text is still re-read every run.</p><ul><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Weekly by default</li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Daily available</li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Digest and webhooks</li></ul></article>
-<article class="price"><h3>Actor start</h3><div class="amount"><b>$0.00005</b><span>per run</span></div><p>The standard Apify start event (256 MB default).</p><ul><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Pay per use via Apify</li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>No subscription</li><li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Max cost per run you set</li></ul></article>
-</div>
-<div class="price-extra">
-<div class="calc"><h3>Worked example, 100-posting board</h3><dl>
-<div><dt>First check</dt><dd>$2.00</dd></div>
-<div><dt>Weekly recheck, nothing changed</dt><dd>$0.50</dd></div>
-<div><dt>If five postings change</dt><dd>$0.50 + 5 × $0.015 more</dd></div>
-<div><dt>Example input, five postings</dt><dd>about $0.10</dd></div>
-</dl></div>
-<div class="fineprint"><p><strong>Not billed:</strong> failed lookups, change rows, digests and webhooks.</p><p>Examples are before Apify platform usage, which is usually a fraction of a cent. Apify keeps 20% of usage revenue as the platform fee.</p></div>
-</div>
-</div>
-</section>
-<section class="section " id="sample">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">Sample output</p>
-<h2>Sample output (example data)</h2>
-<p class="intro">A representative report. Every posting below is fictional, from an invented “Example Co.”, and is not a real company, posting or run.</p></div>
-<div style="display:flex;justify-content:center"><div class="sample-meta"><span>Example data</span><span>Fictional postings</span><span>5 postings screened</span></div></div>
-<div class="sample-wrap" tabindex="0" role="region" aria-label="Sample output table with example data, scrolls sideways on small screens">
-<table class="sample-table">
-<caption class="sr-only">Sample output with fictional example data</caption>
-<thead><tr><th scope="col">Posting</th><th scope="col">Location</th><th scope="col">Pay observed</th><th scope="col">Status</th><th scope="col">Laws screened</th></tr></thead>
-<tbody><tr><td data-label="Posting"><span><strong>Payroll Specialist</strong><small>Example Co. (fictional)</small></span></td><td data-label="Location">Boston, MA</td><td data-label="Pay observed" class="pay-cell">$68,000–$82,000</td><td data-label="Status"><span class="status status-ok">No issue found</span></td><td data-label="Laws screened" class="laws"><span>US-MA</span></td></tr>
-<tr><td data-label="Posting"><span><strong>Recruiter</strong><small>Example Co. (fictional)</small></span></td><td data-label="Location">Burlington, VT</td><td data-label="Pay observed" class="pay-cell">“DOE”</td><td data-label="Status"><span class="status status-review">Review suggested</span></td><td data-label="Laws screened" class="laws"><span>US-VT</span></td></tr>
-<tr><td data-label="Posting"><span><strong>Account Executive</strong><small>Example Co. (fictional)</small></span></td><td data-label="Location">Remote (US)</td><td data-label="Pay observed" class="pay-cell nonepay">No range shown</td><td data-label="Status"><span class="status status-issue">Potential issue</span></td><td data-label="Laws screened" class="laws"><span>US-CA, US-CO, US-NY, US-WA <em>(states you hire in)</em></span></td></tr>
-<tr><td data-label="Posting"><span><strong>HR Coordinator</strong><small>Example Co. (fictional)</small></span></td><td data-label="Location">Vancouver, BC</td><td data-label="Pay observed" class="pay-cell">CA$62,000–CA$74,000</td><td data-label="Status"><span class="status status-ok">No issue found</span></td><td data-label="Laws screened" class="laws"><span>CA-BC</span></td></tr>
-<tr><td data-label="Posting"><span><strong>Facilities Coordinator</strong><small>Example Co. (fictional)</small></span></td><td data-label="Location">Columbus, OH</td><td data-label="Pay observed" class="pay-cell">$21–$24 per hour</td><td data-label="Status"><span class="status status-none">No law identified</span></td><td data-label="Laws screened" class="laws"><span>None in force yet <em>(Columbus: 1 Jan 2027)</em></span></td></tr>
-</tbody>
-</table></div>
-<p class="caption">Example data for illustration only. All employers, postings, locations and pay figures are fictional. “No issue found” is not a statement of compliance. Findings, when present, are potential issues for human review and are not legal advice.</p>
-</div>
-</section>
-<section class="section soft" id="faq">
-<div class="wrap">
-
-<div class="head-center"><p class="kicker">FAQ</p>
-<h2>Questions, answered plainly.</h2></div>
-<div class="faq">
-<details open><summary>Is this legal advice?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>No. It is a screening aid for public posting text. Findings are potential issues for human review, and where it matters you should check with counsel.</p></div></details>
-<details><summary>Do I need to connect or log into my ATS?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>No. The monitor reads public job feeds for Greenhouse, Lever and Ashby boards, the same ones a careers site uses, and then checks the posting page if the feed shows no range. It needs no access to your systems and is not an ATS partnership.</p></div></details>
-<details><summary>How often does it check?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>Weekly is the default and daily is available. You can schedule the same watchlist in your Apify account, and set a maximum cost per run.</p></div></details>
-<details><summary>What does it cost?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>$0.02 for an initial or changed posting check and $0.005 for a verified unchanged recheck, plus a $0.00005 actor start and normal Apify platform usage. It is pay per use, with no subscription.</p></div></details>
-<details><summary>What does “No issue found” mean?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>Only that nothing was flagged by this screen. It is not a statement that a posting complies with any law.</p></div></details>
-<details><summary>Which laws and job boards are covered?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>US state and local laws including NJ, Jersey City (5+ employees), VT, MA, Cleveland, CT and ME, with Columbus, Ohio from 1 January 2027. Canada: British Columbia, Ontario, Prince Edward Island and New Brunswick. The EU directive is included as a note. See the coverage section for the full list. Boards: public Greenhouse, Lever and Ashby.</p></div></details>
-<details><summary>What can’t it see?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>Pay ranges shown only as images or PDFs, behind a login, or on pages that need JavaScript. It does not read Indeed, LinkedIn or other copies of a posting.</p></div></details>
-<details><summary>What does this website collect?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>Nothing personal. It sets no cookies. We use Cloudflare Web Analytics, a cookie-free service that counts visits in aggregate without tracking individuals. See the <a href='privacy.html'>privacy note</a>.</p></div></details>
-</div>
-</div>
-</section>
+    </section>
 
     <section class="cta">
       <div class="wrap">
         <div class="cta-band">
-          <h2>Start a first check in your own Apify account.</h2>
-          <p>The example input screens five postings and costs about $0.10. Schedule the same watchlist weekly when you are ready.</p>
-          <a class="btn btn-light btn-lg" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=footer-band-cta">Try on Apify <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
-          <p class="fine">Questions? <a href="mailto:hello@getsteadfeed.com" style="color:#d3d9f2">hello@getsteadfeed.com</a></p>
+          <h2>Are you in HR? Start with the Pay Transparency monitor.</h2>
+          <p>Screen your public job postings for potential pay-transparency issues, then re-check weekly. Potential issues for human review, not legal advice.</p>
+          <a class="btn btn-light btn-lg" href="pay-transparency/">See how it works <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <p class="fine">Everyone else: <a href="https://apify.com/steadfeed?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=footer-band-cta" style="color:#d3d9f2">browse all Steadfeed tools on the Apify Store</a></p>
         </div>
       </div>
     </section>
@@ -272,19 +242,19 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <a class="wordmark" href="index.html" aria-label="Steadfeed home"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 21.5h14M9 16h14M9 10.5h8" stroke="#0b1020" stroke-width="2.6" stroke-linecap="round"/></svg>Steadfeed</a>
-          <p>Pay Transparency Compliance Monitor is a Steadfeed product, offered on the Apify Store. This site uses no cookies. We use Cloudflare Web Analytics, a cookie-free service that counts visits in aggregate without tracking individuals.</p>
+          <a class="wordmark" href="./" aria-label="Steadfeed home"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 21.5h14M9 16h14M9 10.5h8" stroke="#0b1020" stroke-width="2.6" stroke-linecap="round"/></svg>Steadfeed</a>
+          <p>Small, practical web and data tools, offered on the Apify Store. Cottage Grove, Oregon. This site uses no cookies. We use Cloudflare Web Analytics, a cookie-free service that counts visits in aggregate without tracking individuals.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer">
-        <a href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=ptcm-landing&amp;utm_content=footer-link">Apify Store</a>
-        <a href="index.html#pricing">Pricing</a>
-        <a href="index.html#coverage">Coverage</a>
-        <a href="index.html#faq">FAQ</a>
+        <a href="#products">Products</a>
+        <a href="pay-transparency/">For HR</a>
+        <a href="https://apify.com/steadfeed?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=steadfeed-home&amp;utm_content=footer-link">Apify Store</a>
+        <a href="#about">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="mailto:hello@getsteadfeed.com">hello@getsteadfeed.com</a>
       </nav>
       </div>
-      <p class="footer-legal">Greenhouse, Lever and Ashby are trademarks of their respective owners. Steadfeed reads public job feeds and is not affiliated with or endorsed by them. Results are potential issues for human review, not legal advice. © 2026 Steadfeed.</p>
+      <p class="footer-legal">Product and platform names are trademarks of their respective owners. Steadfeed is not affiliated with or endorsed by them. Tool results are informational and are not legal advice or compliance certificates. © 2026 Steadfeed.</p>
     </div>
   </footer>
   <script src="assets/site.js" defer></script>
