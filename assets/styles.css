@@ -451,3 +451,9 @@ h1,h2,h3,p{margin:0}
 @media (max-width:900px){.pcard.mcp,.about-grid{grid-template-columns:1fr}}
 @media (max-width:720px){.pgrid{grid-template-columns:1fr}.hr-callout{border-radius:20px;padding:.7rem;gap:.55rem;font-size:.92rem}.hr-text{flex-basis:100%;text-align:center}.cat-strip{margin-top:2.4rem;gap:.6rem}.cat-strip a{padding:.8rem;gap:.6rem}.cat-strip .ico{display:none}}
 @media (max-width:440px){.cat-strip b{font-size:.88rem}.pcard,.pcard.mcp{padding:1.4rem}}
+/* Free checker link under the home HR callout */
+.hr-free{margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.35rem .8rem;justify-content:center;align-items:center;font-size:.92rem}
+.hr-free a{display:inline-flex;align-items:center;gap:.35rem;color:#9ee9f7;font-weight:650;text-decoration:underline;text-underline-offset:4px}
+.hr-free a:hover{color:#fff}
+.hr-free a .icon{width:1em;height:1em;stroke-width:2.4}
+.hr-free span{color:#aab3d6}

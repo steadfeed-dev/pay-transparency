@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Pay Transparency Checker for Job Postings — Steadfeed</title>
+  <meta name="description" content="Paste a job posting and see in seconds whether it shows the pay range US pay-transparency laws require, from Colorado and California to New York City. Free, private, runs in your browser.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="canonical" href="https://getsteadfeed.com/pay-transparency/checker/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:url" content="https://getsteadfeed.com/pay-transparency/checker/">
+  <meta property="og:title" content="Free Pay Transparency Checker — Steadfeed">
+  <meta property="og:description" content="Paste a job posting and see in seconds whether it shows the pay range US pay-transparency laws require, from Colorado and California to New York City. Free, private, runs in your browser.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://getsteadfeed.com/assets/og-card.png">
+  <meta property="og:image:alt" content="Steadfeed pay transparency tools">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="../../assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="checker.css">
+  <script>document.documentElement.className="js"</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Free Pay Transparency Checker", "url": "https://getsteadfeed.com/pay-transparency/checker/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any (runs in the browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "Steadfeed", "url": "https://getsteadfeed.com/"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is my job posting uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The check runs as JavaScript inside your browser tab. The text you paste is not sent to Steadfeed or anyone else, and it is gone when you close or reload the page. Our only analytics is cookie-free Cloudflare Web Analytics, which counts page visits and never sees what you type."}}, {"@type": "Question", "name": "Which laws does it check?", "acceptedAnswer": {"@type": "Answer", "text": "Every US state and city law in the table above that is in force today: 22 entries, including Colorado, California, Washington, New York State and City, Illinois, Maryland, Minnesota, Vermont, Massachusetts, New Jersey, Hawaii, Washington D.C., Connecticut, Maine, Virginia, Jersey City, Ithaca, Westchester County and Cleveland. Columbus, Ohio (Jan 1, 2027) and Delaware (Sep 26, 2027) switch on automatically on their start dates."}}, {"@type": "Question", "name": "Does “DOE” or “competitive salary” count?", "acceptedAnswer": {"@type": "Answer", "text": "No. These laws ask for real numbers, usually a good-faith minimum and maximum. Phrases like “DOE”, “competitive” or “negotiable” are fine to add, but only next to a range."}}, {"@type": "Question", "name": "What about remote jobs?", "acceptedAnswer": {"@type": "Answer", "text": "A remote job that someone in a covered state could take can be reached by that state’s law. Several states and New York City say so in their guidance. Mark the job as remote and the checker screens it against every state law in force, then shows what each one needs."}}, {"@type": "Question", "name": "Is this legal advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is a quick screen of the posting text, built on public statutes and agency guidance. Employer-size counts, exceptions and remote-work rules vary. Check the official source linked for each law, or ask an employment lawyer before relying on the result."}}, {"@type": "Question", "name": "How is this different from the paid monitor?", "acceptedAnswer": {"@type": "Answer", "text": "The checker looks at one posting you paste. The Pay Transparency Compliance Monitor reads every public Greenhouse, Lever and Ashby posting a company has, checks them all with the same rules, re-checks weekly and alerts you when a pay range disappears. It is pay per use on Apify, from $0.02 per posting."}}]}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../../" aria-label="Steadfeed home"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 21.5h14M9 16h14M9 10.5h8" stroke="#0b1020" stroke-width="2.6" stroke-linecap="round"/></svg>Steadfeed</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="icon i-open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true" focusable="false"><use href="#i-x"/></svg></button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <span class="nav-links"><a href="../../#products">All products</a><a href="../">Compliance Monitor</a><a href="#coverage">Laws covered</a><a href="#faq">FAQ</a></span>
+        <a class="btn btn-sm" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=free-checker&amp;utm_content=header-cta">Monitor all postings <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.2-5.5 6.5-5.5s5.9 2.1 6.5 5.5"/><path d="M16 4.7a3.5 3.5 0 010 6.6M18.5 14.9c1.8.7 2.9 2.3 3.3 4.6"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8.5 7V5.5A1.5 1.5 0 0110 4h4a1.5 1.5 0 011.5 1.5V7M3 13h18"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1"/></symbol>
+<symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 012-2h2M16 4h2a2 2 0 012 2v2M20 16v2a2 2 0 01-2 2h-2M8 20H6a2 2 0 01-2-2v-2M7 12h10"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 1112 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9zM10 20a2 2 0 004 0"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11.5A7 7 0 005 9.5C5 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z"/></symbol>
+<symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 011-1h8a1 1 0 011 1v16M14 10h5a1 1 0 011 1v10M2 21h20M8 8h2M8 12h2M8 16h2"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+<symbol id="i-webhook" viewBox="0 0 24 24"><path d="M12 9a3 3 0 100-6 3 3 0 000 6zM7.5 21a3 3 0 100-6 3 3 0 000 6zM16.5 21a3 3 0 100-6 3 3 0 000 6z"/><path d="M12 9l-3.8 6.2M9 18h6M12.8 9.7L16 15"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.9-7 9.5-4.1-1.6-7-5.3-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 3v18M16.5 7.5C15.8 6.4 14.2 5.7 12 5.7c-2.5 0-4 1.1-4 2.7 0 4 8.5 1.9 8.5 6 0 1.7-1.7 2.9-4.5 2.9-2.2 0-4-.8-4.8-2.2"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 018 0v2.5"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3z"/><path d="M12 10v4.5M12 17.6v.1"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+</defs></svg>
+  <main id="main">
+    <section class="page-hero pc-hero"><div class="wrap">
+      <p class="pill"><span class="dot" aria-hidden="true"></span>Free tool · No sign-up</p>
+      <h1>Does your job posting show the pay it has to?</h1>
+      <p class="sub">Paste a job posting and see in seconds whether it meets US pay-transparency laws, which laws apply, and exactly what to fix.</p>
+      <ul class="hero-points">
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Free, unlimited</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Runs in your browser. Nothing is uploaded</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>20 state &amp; city laws</li>
+      </ul>
+    </div></section>
+
+    <section class="pc-tool"><div class="wrap">
+      <div class="pc-card">
+        <form id="pc-form" class="pc-form" novalidate>
+          <label for="pc-text">Job posting text <span class="hint">(paste the whole posting, title to benefits)</span></label>
+          <textarea id="pc-text" name="text" spellcheck="false" placeholder="Paste a job posting here…" aria-describedby="pc-err pc-privacy-note"></textarea>
+          <p id="pc-err" class="pc-err" hidden>Paste a job posting first.</p>
+          <div class="pc-grid">
+            <div><label for="pc-state">State</label><select id="pc-state" name="state"><option value="">Read it from the posting</option></select></div>
+            <div><label for="pc-city">City or locations <span class="hint">(optional)</span></label><input id="pc-city" name="city" type="text" autocomplete="off" placeholder="e.g. Denver; Austin, TX"></div>
+            <div><label for="pc-remote">Remote?</label><select id="pc-remote" name="remote"><option value="auto">Detect from posting</option><option value="no">No, on-site or hybrid</option><option value="yes">Yes, open to US applicants</option></select></div>
+            <div><label for="pc-emp">Employees <span class="hint">(optional)</span></label><input id="pc-emp" name="employees" type="number" min="1" inputmode="numeric" placeholder="e.g. 40"></div>
+          </div>
+          <div class="pc-actions">
+            <button class="btn btn-lg" type="submit">Check this posting <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+            <button class="pc-linkbtn" type="button" id="pc-clear">Clear</button>
+          </div>
+          <div class="pc-examples"><span>Or try an example:</span>
+            <button type="button" data-example="pass">Colorado, passes</button>
+            <button type="button" data-example="doe">NYC “DOE”</button>
+            <button type="button" data-example="plus">Chicago “$80k+”</button>
+            <button type="button" data-example="hourly">California hourly</button>
+            <button type="button" data-example="remote">Remote, no pay</button>
+          </div>
+          <p class="pc-privacy" id="pc-privacy-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg><span><b>Private by design.</b> The check runs entirely in this browser tab. Your posting text is never uploaded, stored or sent to anyone, Steadfeed included.</span></p>
+          <noscript><p class="pc-noscript">The checker needs JavaScript turned on. It runs only in your browser.</p></noscript>
+        </form>
+        <div id="pc-results" tabindex="-1" aria-live="polite" hidden></div>
+      </div>
+      <p class="pc-small">Screening only, not legal advice. Examples are fictional.</p>
+    </div></section>
+
+    <section class="section" id="coverage">
+      <div class="wrap">
+        <div class="head-center"><p class="kicker">Laws covered</p>
+          <h2>The US posting laws we check</h2>
+          <p class="intro">Effective dates and coverage come from each law’s official source, last reviewed Nov 15, 2026. Employer-size counts are summarized; the source has the exact rule.</p></div>
+        <div class="pc-cov-wrap" tabindex="0" role="region" aria-label="Laws covered">
+        <table class="pc-cov">
+          <thead><tr><th scope="col">Law</th><th scope="col">In force</th><th scope="col">Employers covered</th><th scope="col">Posting must show</th><th scope="col"><span class="sr-only">Official source</span></th></tr></thead>
+          <tbody>
+<tr><td><b>California</b></td><td>Jan 1, 2023</td><td>15 or more employees, at least one in California</td><td>Pay or pay range</td><td><a href="https://www.dir.ca.gov/dlse/California_Equal_Pay_Act.htm" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Colorado</b></td><td>Jan 1, 2021</td><td>Any employer with at least one employee in Colorado</td><td>Pay or pay range, benefits description, application close date</td><td><a href="https://content.leg.colorado.gov/sites/default/files/2023a_105_signed.pdf" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Connecticut</b></td><td>Oct 1, 2026</td><td>One or more employees</td><td>Pay or pay range, benefits description</td><td><a href="https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00012-R00HB-05003-PA.PDF" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Delaware</b></td><td>Sep 26, 2027 <small>(upcoming)</small></td><td>26 or more employees</td><td>Min and max (no open-ended figures), benefits description</td><td><a href="https://legis.delaware.gov/SessionLaws/Chapter?id=42391" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>District of Columbia</b></td><td>Jun 30, 2024</td><td>At least one employee in the District</td><td>Min and max (no open-ended figures)</td><td><a href="https://code.dccouncil.gov/us/dc/council/code/sections/32-1453.01" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Hawaii</b></td><td>Jan 1, 2024</td><td>50 or more employees</td><td>Pay or pay range</td><td><a href="https://labor.hawaii.gov/hcrc/files/2023/11/Act-203-Pay-Transparency-FAQs.pdf" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Illinois</b></td><td>Jan 1, 2025</td><td>15 or more employees, counted inside and outside Illinois</td><td>Min and max (no open-ended figures), benefits description</td><td><a href="https://labor.illinois.gov/faqs/equal-pay-act-salary-transparency-faq.html" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Maine</b></td><td>Jul 29, 2026</td><td>10 or more employees</td><td>Pay or pay range</td><td><a href="https://legislature.maine.gov/statutes/26/title26sec622-A.html" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Maryland</b></td><td>Oct 1, 2024</td><td>All employers</td><td>Min and max (no open-ended figures), benefits description</td><td><a href="https://labor.maryland.gov/labor/wages/esswagerangefaq.shtml" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Massachusetts</b></td><td>Oct 29, 2025</td><td>25 or more employees in Massachusetts</td><td>Pay or pay range</td><td><a href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section105F" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Minnesota</b></td><td>Jan 1, 2025</td><td>30 or more employees at sites in Minnesota</td><td>Min and max (no open-ended figures), benefits description</td><td><a href="https://www.revisor.mn.gov/statutes/cite/181.173" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>New Jersey</b></td><td>Jun 1, 2025</td><td>10 or more employees over 20 calendar weeks</td><td>Min and max (no open-ended figures), benefits description</td><td><a href="https://www.nj.gov/labor/myworkrights/wages/pay-transparency" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>New York</b></td><td>Sep 17, 2023</td><td>4 or more employees</td><td>Min and max (no open-ended figures)</td><td><a href="https://dol.ny.gov/pay-transparency-act-frequently-asked-questions" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Vermont</b></td><td>Jul 1, 2025</td><td>5 or more employees</td><td>Pay or pay range</td><td><a href="https://legislature.vermont.gov/statutes/section/21/005/00495p" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Virginia</b></td><td>Jul 1, 2026</td><td>All employers</td><td>Min and max (no open-ended figures)</td><td><a href="https://law.lis.virginia.gov/vacode/title40.1/chapter3/section40.1-28.7:12/" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Washington</b></td><td>Jan 1, 2023</td><td>15 or more employees</td><td>Pay or pay range, benefits description</td><td><a href="https://app.leg.wa.gov/RCW/default.aspx?cite=49.58.110" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Cleveland, Ohio</b></td><td>Oct 27, 2025</td><td>15 or more employees in Cleveland</td><td>Pay or pay range</td><td><a href="https://www.clevelandohio.gov/city-hall/boards-commissions/fair-employment-wage-board/laws-procedures" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Columbus, Ohio</b></td><td>Enforced from Jan 1, 2027 <small>(ordinance in effect Dec 3, 2025)</small></td><td>15 or more employees in Columbus</td><td>Pay or pay range</td><td><a href="https://columbus.legistar.com/LegislationDetail.aspx?ID=7713138&amp;GUID=E97F7B48-94C8-4C0D-8A56-CA886949C0CF&amp;FullText=1" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Ithaca, New York</b></td><td>Sep 1, 2022</td><td>4 or more employees whose standard work location is in the City of Ithaca</td><td>Min and max (no open-ended figures)</td><td><a href="https://www.cityofithacany.gov/m/faq?cat=50" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Jersey City, New Jersey</b></td><td>Apr 13, 2022</td><td>5 or more employees in Jersey City, including staff and independent contractors</td><td>Pay or pay range, benefits description</td><td><a href="https://www.jerseycitynj.gov/residentresources/inclusion/paytransparency" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>New York City</b></td><td>Nov 1, 2022</td><td>4 or more employees, at least one in New York City</td><td>Min and max (no open-ended figures)</td><td><a href="https://www.nyc.gov/assets/cchr/downloads/pdf/publications/Salary-Transparency-Factsheet.pdf" rel="noopener" target="_blank">Source</a></td></tr>
+<tr><td><b>Westchester County, New York</b></td><td>Nov 6, 2022</td><td>4 or more employees (the county government is excluded)</td><td>Min and max (no open-ended figures)</td><td><a href="https://humanrights.westchestercountyny.gov/salary-transparency-amendment" rel="noopener" target="_blank">Source</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="pc-small">Toledo and Cincinnati, Ohio only require pay information when an applicant asks after an offer, so they are not posting laws. Canadian provinces and EU rules are covered by the paid monitor.</p>
+      </div>
+    </section>
+
+    <section class="section soft" id="faq">
+      <div class="wrap">
+        <div class="head-center"><p class="kicker">FAQ</p><h2>Questions, answered</h2></div>
+        <div class="faq">
+<details><summary>Is my job posting uploaded anywhere?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>No. The check runs as JavaScript inside your browser tab. The text you paste is not sent to Steadfeed or anyone else, and it is gone when you close or reload the page. Our only analytics is cookie-free Cloudflare Web Analytics, which counts page visits and never sees what you type.</p></div></details>
+<details><summary>Which laws does it check?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>Every US state and city law in the table above that is in force today: 22 entries, including Colorado, California, Washington, New York State and City, Illinois, Maryland, Minnesota, Vermont, Massachusetts, New Jersey, Hawaii, Washington D.C., Connecticut, Maine, Virginia, Jersey City, Ithaca, Westchester County and Cleveland. Columbus, Ohio (Jan 1, 2027) and Delaware (Sep 26, 2027) switch on automatically on their start dates.</p></div></details>
+<details><summary>Does “DOE” or “competitive salary” count?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>No. These laws ask for real numbers, usually a good-faith minimum and maximum. Phrases like “DOE”, “competitive” or “negotiable” are fine to add, but only next to a range.</p></div></details>
+<details><summary>What about remote jobs?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>A remote job that someone in a covered state could take can be reached by that state’s law. Several states and New York City say so in their guidance. Mark the job as remote and the checker screens it against every state law in force, then shows what each one needs.</p></div></details>
+<details><summary>Is this legal advice?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>No. It is a quick screen of the posting text, built on public statutes and agency guidance. Employer-size counts, exceptions and remote-work rules vary. Check the official source linked for each law, or ask an employment lawyer before relying on the result.</p></div></details>
+<details><summary>How is this different from the paid monitor?<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary><div class="ans"><p>The checker looks at one posting you paste. The Pay Transparency Compliance Monitor reads every public Greenhouse, Lever and Ashby posting a company has, checks them all with the same rules, re-checks weekly and alerts you when a pay range disappears. It is pay per use on Apify, from $0.02 per posting.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Checking postings one at a time?</h2>
+          <p>The Pay Transparency Compliance Monitor screens every public Greenhouse, Lever and Ashby posting with these same rules, re-checks weekly and alerts you when a range disappears. From $0.02 per posting. Potential issues for human review, not legal advice.</p>
+          <a class="btn btn-light btn-lg" href="https://apify.com/steadfeed/pay-transparency-compliance-monitor?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=free-checker&amp;utm_content=footer-band-cta">Try the monitor on Apify <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <p class="fine"><a href="../" style="color:#d3d9f2">See how the monitor works</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="wordmark" href="../../" aria-label="Steadfeed home"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M9 21.5h14M9 16h14M9 10.5h8" stroke="#0b1020" stroke-width="2.6" stroke-linecap="round"/></svg>Steadfeed</a>
+          <p>Small, practical web and data tools, offered on the Apify Store. Cottage Grove, Oregon. This site uses no cookies. We use Cloudflare Web Analytics, a cookie-free service that counts visits in aggregate without tracking individuals.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+        <a href="../../#products">Products</a>
+        <a href="../">For HR</a>
+        <a href="./">Free checker</a>
+        <a href="https://apify.com/steadfeed?utm_source=steadfeed-site&amp;utm_medium=website&amp;utm_campaign=free-checker&amp;utm_content=footer-link">Apify Store</a>
+        <a href="../../privacy.html">Privacy</a>
+        <a href="mailto:hello@getsteadfeed.com">hello@getsteadfeed.com</a>
+      </nav>
+      </div>
+      <p class="footer-legal">Product and platform names are trademarks of their respective owners. Steadfeed is not affiliated with or endorsed by them. Tool results are informational and are not legal advice or compliance certificates. © 2026 Steadfeed.</p>
+    </div>
+  </footer>
+  <script src="../../assets/site.js" defer></script>
+  <script type="module" src="checker.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a95febfa8f5742ebaacfa70bf321e671"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
