@@ -1,0 +1,13 @@
+/* Pay-transparent job ad guide (page-specific). */
+.jg-ba{margin-top:1.4rem}
+.jg-ba-label{font-weight:700;color:var(--ink)!important;margin:0 0 .5rem!important}
+.jg-ba .ba-row>div{padding:1rem 1.1rem;border-radius:14px;font-size:.93rem}
+.jg-ba .ba-before{text-decoration:none}
+.jg-ba pre{margin:0;white-space:pre-wrap;word-wrap:break-word;font-family:inherit;line-height:1.55}
+.jg-ba .ba-before pre{color:#5b1d20;text-decoration:line-through;text-decoration-color:rgba(163,38,42,.35)}
+.jg-ba .ba-after pre{color:#0d3b27;font-weight:550}
+.jg-ba-why{font-size:.9rem;color:var(--muted)!important;margin-top:.5rem!important}
+.jg-table td:nth-child(2){white-space:nowrap}
+.jg-table td small{display:block;color:var(--muted);font-weight:500}
+.jg-table tr.jg-up td{background:#fffaf0}
+@media (max-width:640px){.jg-table{min-width:640px}}
