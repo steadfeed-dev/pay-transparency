@@ -4,7 +4,7 @@ import { fixJobAd, BENEFIT_OPTIONS, OTHER_COMP_OPTIONS, FIXER_REVIEWED_ON } from
 import { STATE_NAMES } from '../checker/engine.js';
 
 // Set to the public Apify Store URL at go-live; null shows "coming soon".
-const BULK_URL = null;
+const BULK_URL = 'https://apify.com/steadfeed/job-ad-pay-transparency-fixer';
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
