@@ -1,0 +1,14 @@
+/* State law pages (page-specific). */
+.lw-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.lw-facts .lw-wide{grid-column:1/-1}
+.lw-source{font-size:.95rem}
+.prose h3{margin:1.5rem 0 .4rem;font-size:1.12rem;line-height:1.3}
+.lw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;margin:1.2rem 0}
+.lw-card{display:flex;flex-direction:column;gap:.25rem;padding:1rem 1.1rem;border:1px solid var(--line,#e3e7f2);border-radius:14px;text-decoration:none;color:inherit;background:#fff;min-height:44px}
+.lw-card b{font-size:1.05rem}.lw-card span{font-size:.88rem;opacity:.8}.lw-card em{font-style:normal;font-size:.85rem;font-weight:600;color:#5b4bf0}
+.lw-card.lw-lead{border:2px solid #5b4bf0}
+.lw-others{display:flex;flex-wrap:wrap;gap:.4rem .9rem}.lw-others a{display:inline-block;padding:.35rem 0}
+.ap-box{margin:2rem 0;padding:1.4rem 1.5rem;border-radius:18px;background:#f3f1ff;border:1px solid #d9d3ff}
+.ap-box h2{margin:0 0 .5rem;font-size:1.25rem}.ap-box p{margin:.4rem 0}.ap-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem!important}
+.ap-actions .btn{min-height:44px}
+.btn-ghost{background:#fff!important;color:#5b4bf0!important;border:1px solid #5b4bf0}
+@media(max-width:640px){.lw-facts{grid-template-columns:1fr}}
