@@ -607,3 +607,6 @@ h1,h2,h3,p{margin:0}
 .sources li{margin-top:.4rem}
 .guide-disclaimer{margin-top:2rem!important;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)!important}
 @media (max-width:640px){.ba-row{grid-template-columns:1fr}.f-plus{display:none}.soon-card{flex-direction:column}}
+/* Autopilot front-door line (checker, fixer, guide) */
+.ap-cta{margin:1.2rem 0 0;padding:.9rem 1.1rem;border-radius:14px;background:#f3f1ff;border:1px solid #d9d3ff;font-weight:600;color:#0b1020}
+.ap-cta a{display:inline-block;padding:.35rem 0;color:#5b4bf0}
