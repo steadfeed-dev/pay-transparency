@@ -282,6 +282,8 @@ h1,h2,h3,p{margin:0}
 .site-footer{background:var(--ink);color:#aab3d6;padding:3.2rem 0 2.4rem;font-size:.92rem}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:2rem}
 .site-footer p{max-width:56ch;margin-top:.9rem;color:#98a2c8}
+.site-footer p a{color:#d3d9f2}
+.site-footer p a:hover{color:#fff}
 .site-footer .footer-legal{max-width:none}
 .footer-nav{display:flex;flex-wrap:wrap;gap:.7rem 1.5rem;align-content:flex-start;justify-content:flex-end}
 .footer-nav a{color:#d3d9f2;text-decoration:none}
