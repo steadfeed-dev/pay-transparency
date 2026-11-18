@@ -610,3 +610,24 @@ h1,h2,h3,p{margin:0}
 /* Autopilot front-door line (checker, fixer, guide) */
 .ap-cta{margin:1.2rem 0 0;padding:.9rem 1.1rem;border-radius:14px;background:#f3f1ff;border:1px solid #d9d3ff;font-weight:600;color:#0b1020}
 .ap-cta a{display:inline-block;padding:.35rem 0;color:#5b4bf0}
+
+/* Autopilot product page + home front-door */
+.steps-4{grid-template-columns:repeat(4,1fr)}
+.price-year{margin:.35rem 0 0;color:var(--muted);font-size:.95rem;font-weight:600}
+.ap-free{margin-top:2.4rem;display:flex;gap:1.4rem;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:1.6rem 1.8rem;border-radius:var(--radius);background:#f3f1ff;border:1px solid #d9d3ff}
+.ap-free h3{margin:.3rem 0 .4rem;font-size:1.25rem;font-weight:700;color:var(--ink)}
+.ap-free p{margin:0;color:var(--text);max-width:54ch}
+.ap-free .btn{min-height:44px;flex:none}
+.ap-price-note{margin-top:1.4rem;color:var(--muted);font-size:.92rem}
+.ap-home{margin:0 0 1.4rem;padding:1.5rem 1.6rem;border-radius:var(--radius);background:#f3f1ff;border:1px solid #d9d3ff;display:flex;gap:1.2rem;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.ap-home h4{margin:.25rem 0 .45rem;font-size:1.2rem;font-weight:720;color:var(--ink);letter-spacing:-.015em}
+.ap-home p{margin:0;color:var(--text);max-width:62ch}
+.ap-home .ap-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.ap-home .btn,.ap-home .ap-actions .btn{min-height:44px}
+.guide-note{margin-top:1.1rem;color:var(--muted);font-size:.95rem}
+@media (max-width:1040px){.steps-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){
+  .steps-4{grid-template-columns:1fr}
+  .ap-free,.ap-home{flex-direction:column;align-items:stretch}
+  .price .amount b{font-size:2.6rem}
+}
