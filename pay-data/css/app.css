@@ -3,6 +3,9 @@
 body.pdr-standalone{margin:0;background:var(--pdr-bg);color:var(--pdr-ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 .pdr-app,.pdr-app *{box-sizing:border-box}
 .pdr-app{color:var(--pdr-ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--pdr-bg)}
+/* Override site dark-hero text colors (e.g. .lede { color:#c9d0ea }) so body copy stays readable on the light tool background. */
+.pdr-app p,.pdr-app li,.pdr-app h2,.pdr-app h3{color:var(--pdr-ink)}
+.pdr-app footer.app-footer,.pdr-app footer.app-footer p{color:#334155}
 .pdr-app .top{display:flex;justify-content:space-between;align-items:center;padding:14px 28px;background:#fff;border-bottom:1px solid var(--pdr-line)}
 .pdr-app .brand{font-weight:700;color:var(--pdr-brand);font-size:18px}
 .pdr-app .brand span{color:var(--pdr-ink);font-weight:600;margin-left:6px}
@@ -10,7 +13,7 @@ body.pdr-standalone{margin:0;background:var(--pdr-bg);color:var(--pdr-ink);font:
 .pdr-app .privacy-bar{background:var(--pdr-brand2);color:#0b4d42;padding:10px 28px;border-bottom:1px solid #cfe7e1}
 .pdr-app .disclaimer{background:#fffbeb;padding:8px 28px;border-bottom:1px solid #fde68a;font-size:13.5px}
 .pdr-app .intro-panel{padding:16px 28px 8px;max-width:1400px}
-.pdr-app .intro-panel .lede{font-size:17px;margin:8px 0}
+.pdr-app .intro-panel .lede{font-size:17px;line-height:1.55;margin:8px 0;max-width:none;color:#1e293b}
 .pdr-app .intro-points{margin:8px 0 16px;padding-left:20px}
 .pdr-app .intro-points li{margin:4px 0}
 .pdr-app .steps{display:flex;flex-wrap:wrap;gap:6px;padding:12px 28px;background:#fff;border-bottom:1px solid var(--pdr-line);position:sticky;top:0;z-index:5}
@@ -30,13 +33,15 @@ body.pdr-standalone{margin:0;background:var(--pdr-bg);color:var(--pdr-ink);font:
 .pdr-app .file{border:1px dashed #98a2b3;padding:12px;border-radius:10px;background:#fff}
 .pdr-app .file.small{padding:6px 10px}
 .pdr-app input,.pdr-app select{font:inherit;padding:6px 8px;border:1px solid #d0d5dd;border-radius:6px;background:#fff;color:var(--pdr-ink)}
-.pdr-app .muted{color:var(--pdr-muted)}
+.pdr-app .muted,.pdr-app p.muted,.pdr-app footer.app-footer p.muted{color:#475569}
+.pdr-app .intro-points li{color:#1e293b}
 .pdr-app .small{font-size:12.5px}
 .pdr-app .ok{color:var(--pdr-ok)}
 .pdr-app .bad{color:var(--pdr-bad);font-weight:600}
 .pdr-app .warn{color:var(--pdr-warn)}
 .pdr-app .req{color:var(--pdr-bad);font-size:11px}
 .pdr-app .status{margin:8px 0;padding:8px 12px;background:#fff;border:1px solid var(--pdr-line);border-radius:8px}
+.pdr-app .status:empty{display:none}
 .pdr-app .map-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px 18px}
 .pdr-app .map-grid label{display:flex;flex-direction:column;font-size:13px;gap:3px}
 .pdr-app .issues{max-height:260px;overflow:auto;font-size:13px;background:#fff;border:1px solid var(--pdr-line);border-radius:8px;padding:8px 26px}
