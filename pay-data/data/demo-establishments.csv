@@ -1,0 +1,6 @@
+establishment_id,name,address1,address2,city,state,zip,naics,activity,filed_last_year,hq
+SF-HQ,Juniper Ridge Outfitters (SYNTHETIC) - HQ,100 Example Way,Suite 400,San Francisco,CA,94105,459110,Online and retail sale of outdoor gear; company headquarters,Yes,Yes
+LA-STORE,Juniper Ridge Outfitters (SYNTHETIC) - LA Store,200 Sample Blvd,,Los Angeles,CA,90012,459110,Retail store selling outdoor gear,Yes,No
+FRESNO-DC,Juniper Ridge Outfitters (SYNTHETIC) - Fresno DC,300 Test Logistics Rd,,Fresno,CA,93725,493110,Warehouse and distribution of outdoor gear,No,No
+RENO-OPS,Juniper Ridge Outfitters (SYNTHETIC) - Reno Ops,400 Placeholder St,,Reno,NV,89501,459110,Customer support and fulfillment operations,Yes,No
+PDX-WORKS,Juniper Ridge Outfitters (SYNTHETIC) - Portland Workshop,500 Mock Ave,,Portland,OR,97201,339920,Manufacturing and repair of outdoor equipment,No,No
