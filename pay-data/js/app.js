@@ -9,8 +9,8 @@
   const HIGH = 0.85;
   const NOTIFY_MAIL = 'hello@getsteadfeed.com';
   const NOTIFY_MAILTO = 'mailto:hello@getsteadfeed.com?subject=' +
-    encodeURIComponent('Notify me when the official 2027 pay-data filing export opens') +
-    '&body=' + encodeURIComponent('Please email me at this address when the official California RY2026 filing export is available on getsteadfeed.com/pay-data/.');
+    encodeURIComponent('Pay Data 2027 early access') +
+    '&body=' + encodeURIComponent("I'd like to join early access for the Steadfeed Pay Data 2027 filing passes. No payment today. Please email me when the official exports open.");
 
   const S = { raw: null, headers: [], map: {}, employees: [], issues: [], ests: {}, socMap: {}, matcher: null, ca: null, eu: null, loadedName: '' };
 
@@ -214,13 +214,13 @@
   // ---------- California ----------
   function notifyBoxHtml() {
     return `<div class="notify-box" id="notifyOfficial">
-      <h3>Get notified when the official 2027 filing export opens</h3>
-      <p>This preview follows California CRD’s Nov 16, 2026 preliminary planning format. It is <strong>not a filing file</strong>. When CRD publishes the official Reporting Year 2026 template in February 2027, we’ll offer a matching export. Raise your hand and we’ll email you — we reply within one business day.</p>
+      <h3>Join early access — no payment today</h3>
+      <p>This preview follows California CRD’s Nov 16, 2026 preliminary planning format. It is <strong>not a filing file</strong>. Official 2027 filing passes ($149 California, $99 EU, $199 bundle, $399/year advisor) open with the official February 2027 CRD template. Raise your hand and we’ll email you — we reply within one business day.</p>
       <p>Emailing us does not send your payroll. Everything you load here stays in this browser.</p>
       <p class="notify-actions">
-        <a class="btn-mail" href="${NOTIFY_MAILTO}">Email hello@getsteadfeed.com</a>
+        <a class="btn-mail" href="${NOTIFY_MAILTO}">Join early access — no payment today</a>
         <button type="button" class="secondary copy-hello">Copy address</button>
-        <span class="muted hello-addr">hello@getsteadfeed.com</span>
+        <span class="hello-addr">hello@getsteadfeed.com</span>
       </p>
     </div>`;
   }

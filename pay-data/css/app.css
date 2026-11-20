@@ -86,3 +86,22 @@ body.pdr-standalone{margin:0;background:var(--pdr-bg);color:var(--pdr-ink);font:
 .pdr-app .faq details{background:#fff;border:1px solid var(--pdr-line);border-radius:10px;padding:10px 16px;margin:8px 0}
 .pdr-app .faq summary{cursor:pointer;font-weight:600}
 @media print{body.printing>*{display:none!important}body.printing .print-only{display:block!important}body{background:#fff}}
+
+.pdr-app .pricing-early{margin:8px 0 18px;max-width:1100px}
+.pdr-app .pricing-early,.pdr-app .pricing-early p,.pdr-app .pricing-early h3,.pdr-app .pricing-early li{color:#1e293b}
+.pdr-app .price-free,.pdr-app .price-plans{background:#fff;border:1px solid var(--pdr-line);border-radius:12px;padding:16px 18px;margin:0 0 12px}
+.pdr-app .price-kicker{margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#0f6b5c}
+.pdr-app .price-free p,.pdr-app .no-pay-note{margin:0;color:#334155}
+.pdr-app .no-pay-note{margin:0 0 14px}
+.pdr-app .price-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.pdr-app .price-card{background:#f8fafc;border:1px solid var(--pdr-line);border-radius:12px;padding:14px 16px}
+.pdr-app .price-card h3{margin:0 0 8px;font-size:15px;line-height:1.3;color:#0f172a}
+.pdr-app .price-amt{margin:0 0 8px;color:#0f172a;font-size:15px}
+.pdr-app .price-amt b{font-size:28px;font-weight:750;letter-spacing:-.03em;line-height:1.1;margin-right:4px}
+.pdr-app .price-amt span{color:#334155;font-weight:500}
+.pdr-app .price-card p{margin:0;font-size:13.5px;color:#334155;line-height:1.45}
+.pdr-app .pricing-early .notify-box{max-width:none;margin:0}
+.pdr-app .notify-box h3,.pdr-app .notify-box p{color:#1e293b}
+.pdr-app a.btn-mail{color:#fff}
+@media (max-width:960px){.pdr-app .price-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.pdr-app .price-grid{grid-template-columns:1fr}}
